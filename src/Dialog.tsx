@@ -323,7 +323,7 @@ export default class Dialog extends React.Component<IDialogPropTypes, any> {
     }
     this.checkScrollbar();
     this.setScrollbar();
-    document.html.style.overflow = 'hidden';
+    document.documentElement.style.overflow = 'hidden';
     document.body.style.overflow = 'hidden';
     // this.adjustDialog();
   }
@@ -332,7 +332,7 @@ export default class Dialog extends React.Component<IDialogPropTypes, any> {
     if (openCount !== 0) {
       return;
     }
-    document.html.style.overflow = '';
+    document.documentElement.style.overflow = '';
     document.body.style.overflow = '';
     this.resetScrollbar();
     // this.resetAdjustments();
